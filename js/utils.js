@@ -37,7 +37,7 @@
 	 *@param date 日期（Date形的日期）new Date();   
 	 *@return 返回格式化的日期       
 	 */
-	var dateFtt = function(fmt, date) {
+	function dateFtt(fmt, date) {
 		var o = {
 			"M+": date.getMonth() + 1, //月份   
 			"d+": date.getDate(), //日   
@@ -61,8 +61,9 @@
 	 *@param part 格式化形参 
 	 *@param value 加减的数值
 	 *@return 返回日期加减后的日期 Date形的日期）new Date();
-	 */     
-	function dateAdd(date, part,  value)  {  
+	 */
+	     
+	function  dateAdd(date, part,  value)  {  
 		value  *=  1;     
 		if  (isNaN(value))  {         
 			value  =  0;     
